@@ -70,3 +70,41 @@ if(isAccessUserPage){
 }else{
     console.log(`💢 유저 페이지에 접근할 수 없습니다.`);
 }
+
+//심힝연산자
+console.log(
+    isAccessUserPage ? "💌  유저 페이지에 접근할 수 있습니다." : "💢 유저 페이지에 접근할 수 없습니다."
+)
+
+const copyArr = [...animals,"value"];//배열에 추가 + 카피
+console.log(animals);
+console.log(copyArr);
+
+const todoItem = {
+    id :1,
+    content : "공부"
+}
+console.log("🚀 ~ todoItem:", todoItem)
+
+//복제 (존재하는 키값:수정 , 존재 안하는 키값 : 추가)
+const newItem = {
+    ...todoItem,
+    content : "공공공",
+    is : false
+};
+console.log("🚀 ~ newItem:", newItem)
+
+//자바스크립트에서 false로 간주
+/*
+1. null
+2. 숫자 0
+3. string ""
+4. undefined
+
+
+
+
+*/
+
+
+
